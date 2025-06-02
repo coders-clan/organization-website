@@ -1,24 +1,7 @@
-# NCM Business Portfolio
-
-![NCM Business Portfolio](https://i.imgur.com/uZshILa.png)
-![NCM Business Portfolio - Dashboard](https://i.imgur.com/QKlIlvQ.png)
-![NCM Business Portfolio - Dashboard Bright](https://i.imgur.com/F8RVRH9.png)
-
-A modern business portfolio application built with Next.js 14, Clerk Authentication, TailwindCSS, and shadcn/ui components.
-
-## 🚀 Features
-
-- **Modern UI/UX**: Beautiful, responsive design with glassmorphism effects
-- **Authentication**: Secure user authentication powered by Clerk
-- **Dashboard Analytics**: Interactive charts and visualization
-- **Project Management**: Create and manage project portfolios
-- **Theme Support**: Dark/Light mode toggle
-- **Mobile-First Design**: Fully responsive interface for all devices
-
 ## 🧰 Tech Stack
 
 - **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
-- **Authentication**: [Clerk](https://clerk.dev/) 
+- **Authentication**: [Clerk](https://clerk.dev/)
 - **Styling**: [TailwindCSS](https://tailwindcss.com/)
 - **UI Components**: [shadcn/ui](https://ui.shadcn.com/)
 - **Charts**: Recharts-based custom components
@@ -51,8 +34,8 @@ These tools will help you understand and modify the codebase more efficiently.
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/ncm-business-portfolio.git
-cd ncm-business-portfolio
+git clone https://github.com/coders-clan/organization-website
+cd organization-website
 ```
 
 2. **Install dependencies**
@@ -66,49 +49,56 @@ yarn install
 3. **Set up Clerk Authentication**
 
    a. Create a [Clerk account](https://clerk.dev/sign-up) if you don't have one
-   
+
    b. Create a new application:
-      - Go to the Clerk Dashboard and click "Add Application"
-      - Enter a name for your application
-      - Select "Next.js" as the framework
-   
+
+   - Go to the Clerk Dashboard and click "Add Application"
+   - Enter a name for your application
+   - Select "Next.js" as the framework
+
    c. Configure your application:
-      - In the Clerk Dashboard, go to your application
-      - Go to "API Keys" in the sidebar
-      - You'll find your "Publishable Key" and "Secret Key"
-      - Copy these keys for your environment variables
-   
+
+   - In the Clerk Dashboard, go to your application
+   - Go to "API Keys" in the sidebar
+   - You'll find your "Publishable Key" and "Secret Key"
+   - Copy these keys for your environment variables
+
    d. Configure sign-in options (optional):
-      - In the Clerk Dashboard, go to "Authentication" → "Social Connections"
-      - Enable the social login providers you want to support (e.g., Google, GitHub)
-      - Follow the instructions to set up each provider
-   
+
+   - In the Clerk Dashboard, go to "Authentication" → "Social Connections"
+   - Enable the social login providers you want to support (e.g., Google, GitHub)
+   - Follow the instructions to set up each provider
+
    e. Set up redirect URLs:
-      - In "Authentication" → "Redirects", set the following:
-        - Sign-in: `/sign-in`
-        - Sign-up: `/sign-up`
-        - After sign-in: `/dashboard`
-        - After sign-up: `/dashboard`
+
+   - In "Authentication" → "Redirects", set the following:
+     - Sign-in: `/sign-in`
+     - Sign-up: `/sign-up`
+     - After sign-in: `/dashboard`
+     - After sign-up: `/dashboard`
 
 4. **Set up MongoDB Atlas**
 
    a. Create a [MongoDB Atlas account](https://www.mongodb.com/cloud/atlas/register) if you don't have one
-   
+
    b. Create a new project and cluster (the free tier works perfectly)
-   
+
    c. Set up database access:
-      - Create a database user with password authentication
-      - Remember to save these credentials securely
-   
+
+   - Create a database user with password authentication
+   - Remember to save these credentials securely
+
    d. Set up network access:
-      - Add your current IP address to the IP Access List
-      - For development, you can allow access from anywhere (0.0.0.0/0)
-   
+
+   - Add your current IP address to the IP Access List
+   - For development, you can allow access from anywhere (0.0.0.0/0)
+
    e. Get your connection string:
-      - Go to your cluster and click "Connect"
-      - Select "Connect your application"
-      - Copy the connection string (it will look like: `mongodb+srv://username:<password>@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority`)
-      - Replace `<password>` with your database user's password
+
+   - Go to your cluster and click "Connect"
+   - Select "Connect your application"
+   - Copy the connection string (it will look like: `mongodb+srv://username:<password>@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority`)
+   - Replace `<password>` with your database user's password
 
 5. **Set up environment variables**
 
@@ -164,29 +154,6 @@ The application is built with a mobile-first approach and includes:
 - Fluid layouts that adapt to any screen size
 - Optimized content display for different devices
 
-## 🧩 Project Structure
-
-```
-ncm-business-portfolio/
-├── public/              # Static assets
-├── src/
-│   ├── app/             # App router pages
-│   │   ├── dashboard/   # Dashboard page
-│   │   ├── projects/    # Projects page
-│   │   ├── analytics/   # Analytics page
-│   │   ├── settings/    # Settings page
-│   │   └── ...
-│   ├── components/      # Reusable components
-│   │   ├── charts/      # Chart components
-│   │   ├── ui/          # shadcn/ui components
-│   │   └── ...
-│   ├── lib/             # Utility functions and shared logic
-│   └── models/          # MongoDB schema models
-├── next.config.ts       # Next.js configuration
-├── tailwind.config.js   # TailwindCSS configuration
-└── ...
-```
-
 ## 🚀 Deployment
 
 This application can be easily deployed on:
@@ -214,18 +181,19 @@ Once set up, Clerk provides:
 4. **Server-side helpers**: For accessing user data in server components
 
 Example of protecting a route:
+
 ```jsx
 // In your route component
 import { auth } from "@clerk/nextjs";
 
 export default function ProtectedPage() {
   const { userId } = auth();
-  
+
   if (!userId) {
     // Handle unauthenticated state
     redirect("/sign-in");
   }
-  
+
   // Render content for authenticated users
 }
 ```
@@ -245,16 +213,6 @@ Customize the look and feel of the application:
 - Edit `tailwind.config.js` to change theme colors
 - Modify `src/app/layout.tsx` to update global layout
 - Update fonts and styles in the theme configuration
-
-## 👤 About the Developer
-
-Created with 💜 by [Yuval Avidani](https://linktr.ee/yuvai), AI Builder & Speaker
-
-- X: [@yuvalav](https://x.com/yuvalav)
-- Instagram: [@yuval_770](https://instagram.com/yuval_770)
-- Blog: [https://yuv.ai](https://yuv.ai)
-
-> "Fly High With YUV.AI"
 
 ## 📄 License
 
