@@ -1,0 +1,28 @@
+{
+  "pages": {
+    "/sign-up/[[...sign-up]]/page": [
+      "static/chunks/32a9e_next_dist_8bfaaeec._.js",
+      "static/chunks/src_app_favicon_ico_mjs_4bf82196._.js",
+      "static/chunks/[root-of-the-server]__a57fafaf._.css",
+      "static/chunks/7595a_@clerk_nextjs_dist_esm_app-router_7cb2c23b._.js",
+      "static/chunks/d3a36_@clerk_shared_dist_51b550c3._.js",
+      "static/chunks/e5f63_swr_dist_b39c783f._.js",
+      "static/chunks/a3b4d_@clerk_clerk-react_dist_556e4a20._.js",
+      "static/chunks/32a9e_next_8c90e8c7._.js",
+      "static/chunks/78375_tailwind-merge_dist_bundle-mjs_mjs_46ec1965._.js",
+      "static/chunks/node_modules__pnpm_d3e62f00._.js",
+      "static/chunks/src_6756c521._.js",
+      "static/chunks/src_app_layout_tsx_e0c3d4b4._.js",
+      "static/chunks/src_app_not-found_tsx_78f4ed69._.js",
+      "static/chunks/7595a_@clerk_nextjs_dist_esm_client-boundary_f50cf4d1._.js",
+      "static/chunks/src_app_sign-up_[[___sign-up]]_page_tsx_78f4ed69._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_60b49885._.js",
+      "static/chunks/32a9e_next_dist_compiled_e64c8dbd._.js",
+      "static/chunks/32a9e_next_dist_client_56a827c2._.js",
+      "static/chunks/32a9e_next_dist_1143052f._.js",
+      "static/chunks/61dca_@swc_helpers_cjs_e27e0aca._.js",
+      "static/chunks/_e69f0d32._.js",
+      "static/chunks/_98bd08c6._.js"
+    ]
+  }
+}

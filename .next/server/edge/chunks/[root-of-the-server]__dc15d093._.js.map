@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 23, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/middleware.ts"],"sourcesContent":["import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';\nimport { NextResponse } from 'next/server';\n\n// Create a matcher for public routes that don't require authentication\nconst isPublicRoute = createRouteMatcher([\n  '/sign-in(.*)', \n  '/sign-up(.*)',\n  '/api/test-db(.*)'\n]);\n\nexport default clerkMiddleware((auth, req) => {\n  // If the route is not public and the user is not signed in, protect it\n  if (!isPublicRoute(req)) {\n    // This uses the correct auth.protect() approach\n    // The middleware will handle redirecting to sign-in or returning 401 for API routes\n    auth.protect();\n  }\n  \n  return NextResponse.next();\n});\n\nexport const config = {\n  matcher: [\n    '/((?!.+\\\\.[\\\\w]+$|_next).*)',\n    '/',\n    '/(api|trpc)(.*)'\n  ],\n}; "],"names":[],"mappings":";;;;AAAA;AAAA;AACA;AAAA;;;AAEA,uEAAuE;AACvE,MAAM,gBAAgB,CAAA,GAAA,qYAAA,CAAA,qBAAkB,AAAD,EAAE;IACvC;IACA;IACA;CACD;uCAEc,CAAA,GAAA,wYAAA,CAAA,kBAAe,AAAD,EAAE,CAAC,MAAM;IACpC,uEAAuE;IACvE,IAAI,CAAC,cAAc,MAAM;QACvB,gDAAgD;QAChD,oFAAoF;QACpF,KAAK,OAAO;IACd;IAEA,OAAO,4TAAA,CAAA,eAAY,CAAC,IAAI;AAC1B;AAEO,MAAM,SAAS;IACpB,SAAS;QACP;QACA;QACA;KACD;AACH"}}]
+}
