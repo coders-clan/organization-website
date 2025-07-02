@@ -45,7 +45,7 @@ export default function NotFound() {
           
           <div className="w-full pt-4 border-t border-border/40">
             <p className="text-sm text-center text-muted-foreground">
-              "Fly High With YUV.AI"
+              Fly High With YUV.AI
             </p>
           </div>
         </div>

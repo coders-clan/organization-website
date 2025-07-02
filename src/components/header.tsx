@@ -70,15 +70,6 @@ export function Header() {
             <Link href="/dashboard" className="font-medium transition-colors hover:text-purple-600">
               Dashboard
             </Link>
-            <Link href="/projects" className="font-medium transition-colors hover:text-purple-600">
-              Projects
-            </Link>
-            <Link href="/analytics" className="font-medium transition-colors hover:text-purple-600">
-              Analytics
-            </Link>
-            <Link href="/settings" className="font-medium transition-colors hover:text-purple-600">
-              Settings
-            </Link>
           </nav>
         </SignedIn>
 
@@ -110,15 +101,6 @@ function MobileNav() {
       <SignedIn>
         <Link href="/dashboard" className="flex items-center gap-2 font-medium hover:text-purple-600">
           Dashboard
-        </Link>
-        <Link href="/projects" className="flex items-center gap-2 font-medium hover:text-purple-600">
-          Projects
-        </Link>
-        <Link href="/analytics" className="flex items-center gap-2 font-medium hover:text-purple-600">
-          Analytics
-        </Link>
-        <Link href="/settings" className="flex items-center gap-2 font-medium hover:text-purple-600">
-          Settings
         </Link>
       </SignedIn>
       <SignedOut>

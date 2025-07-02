@@ -2,16 +2,9 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { 
-  ChevronLeft, 
-  LayoutDashboard, 
-  Settings, 
-  Layers, 
-  BarChart3,
-  Users,
-  FileText,
-  Bell,
-  Home
+import {
+  ChevronLeft,
+  LayoutDashboard
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -44,48 +37,6 @@ export function Sidebar({ className }: SidebarProps) {
             text="Dashboard"
             collapsed={collapsed}
             active={pathname === "/dashboard"}
-          />
-          <NavItem
-            href="/projects"
-            icon={Layers}
-            text="Projects"
-            collapsed={collapsed}
-            active={pathname === "/projects"}
-          />
-          <NavItem
-            href="/analytics"
-            icon={BarChart3}
-            text="Analytics"
-            collapsed={collapsed}
-            active={pathname === "/analytics"}
-          />
-          <NavItem
-            href="/team"
-            icon={Users}
-            text="Team"
-            collapsed={collapsed}
-            active={pathname === "/team"}
-          />
-          <NavItem
-            href="/documents"
-            icon={FileText}
-            text="Documents"
-            collapsed={collapsed}
-            active={pathname === "/documents"}
-          />
-          <NavItem
-            href="/notifications"
-            icon={Bell}
-            text="Notifications"
-            collapsed={collapsed}
-            active={pathname === "/notifications"}
-          />
-          <NavItem
-            href="/settings"
-            icon={Settings}
-            text="Settings"
-            collapsed={collapsed}
-            active={pathname === "/settings"}
           />
         </nav>
       </div>
