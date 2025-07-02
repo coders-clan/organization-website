@@ -28,7 +28,7 @@ export function Header() {
             <Link href="/" className="flex items-center gap-2">
               <span className="h-8 w-8 flex items-center justify-center rounded-full bg-purple-600 text-white font-bold">Y</span>
               <span className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-yellow-400">
-                YUV.AI
+                CodersClan
               </span>
             </Link>
           </div>
@@ -60,7 +60,7 @@ export function Header() {
           <Link href="/" className="flex items-center gap-2">
             <span className="h-8 w-8 flex items-center justify-center rounded-full bg-purple-600 text-white font-bold">Y</span>
             <span className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-yellow-400">
-              YUV.AI
+              CodersClan
             </span>
           </Link>
         </div>
@@ -69,15 +69,6 @@ export function Header() {
           <nav className="hidden lg:flex items-center justify-center mx-auto gap-6 text-sm">
             <Link href="/dashboard" className="font-medium transition-colors hover:text-purple-600">
               Dashboard
-            </Link>
-            <Link href="/projects" className="font-medium transition-colors hover:text-purple-600">
-              Projects
-            </Link>
-            <Link href="/analytics" className="font-medium transition-colors hover:text-purple-600">
-              Analytics
-            </Link>
-            <Link href="/settings" className="font-medium transition-colors hover:text-purple-600">
-              Settings
             </Link>
           </nav>
         </SignedIn>
@@ -110,15 +101,6 @@ function MobileNav() {
       <SignedIn>
         <Link href="/dashboard" className="flex items-center gap-2 font-medium hover:text-purple-600">
           Dashboard
-        </Link>
-        <Link href="/projects" className="flex items-center gap-2 font-medium hover:text-purple-600">
-          Projects
-        </Link>
-        <Link href="/analytics" className="flex items-center gap-2 font-medium hover:text-purple-600">
-          Analytics
-        </Link>
-        <Link href="/settings" className="flex items-center gap-2 font-medium hover:text-purple-600">
-          Settings
         </Link>
       </SignedIn>
       <SignedOut>

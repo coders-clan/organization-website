@@ -21,7 +21,7 @@ export default function DashboardLayout({
               Created with 💜 by <a href="https://linktr.ee/yuvai" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:underline">Yuval Avidani</a> - AI Builder & Speaker
             </div>
             <div className="text-xs text-yellow-500 font-medium">
-              "Fly High With YUV.AI"
+              Fly High With CodersClan
             </div>
           </div>
         </footer>
