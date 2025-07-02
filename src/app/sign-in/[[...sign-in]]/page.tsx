@@ -22,7 +22,7 @@ export default function SignInPage() {
           <div className="inline-flex flex-col items-center gap-2 mb-6">
             <span className="h-14 w-14 flex items-center justify-center rounded-full bg-purple-600 text-white font-bold text-2xl shadow-lg">Y</span>
             <span className="font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-yellow-400">
-              YUV.AI
+              CodersClan
             </span>
           </div>
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Welcome back</h1>
@@ -55,7 +55,7 @@ export default function SignInPage() {
         
         <div className="mt-8 text-center">
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            Don't have an account?{' '}
+            Don&apos;t have an account?{' '}
             <Link href="/sign-up" className="font-medium text-purple-600 hover:text-purple-700">
               Sign up <ArrowRight className="inline h-3 w-3" />
             </Link>

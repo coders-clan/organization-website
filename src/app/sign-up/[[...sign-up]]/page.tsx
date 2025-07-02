@@ -22,7 +22,7 @@ export default function SignUpPage() {
           <div className="inline-flex flex-col items-center gap-2 mb-6">
             <span className="h-14 w-14 flex items-center justify-center rounded-full bg-purple-600 text-white font-bold text-2xl shadow-lg">Y</span>
             <span className="font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-yellow-400">
-              YUV.AI
+              CodersClan
             </span>
           </div>
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">Create your account</h1>

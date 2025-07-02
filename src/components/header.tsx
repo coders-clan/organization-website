@@ -28,7 +28,7 @@ export function Header() {
             <Link href="/" className="flex items-center gap-2">
               <span className="h-8 w-8 flex items-center justify-center rounded-full bg-purple-600 text-white font-bold">Y</span>
               <span className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-yellow-400">
-                YUV.AI
+                CodersClan
               </span>
             </Link>
           </div>
@@ -60,7 +60,7 @@ export function Header() {
           <Link href="/" className="flex items-center gap-2">
             <span className="h-8 w-8 flex items-center justify-center rounded-full bg-purple-600 text-white font-bold">Y</span>
             <span className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-yellow-400">
-              YUV.AI
+              CodersClan
             </span>
           </Link>
         </div>

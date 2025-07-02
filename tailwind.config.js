@@ -55,7 +55,7 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // YUV.AI brand colors
+        // CodersClan brand colors
         yuv: {
           purple: "#8844ee",
           yellow: "#ffdd22",
